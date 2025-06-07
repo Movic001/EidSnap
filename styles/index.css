@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -574,6 +575,22 @@ body {
 
   .mobile-menu {
     display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  #nav-toggle:checked ~ .nav-links {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
   }
 
   .hero h1 {
